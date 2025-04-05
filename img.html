@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <script src="img.js"></script>
+    <link rel="stylesheet" href="img.css">
+</head>
+
+<body>
+    <div id="image"> 
+       <input type="file"  id="image" accept=".png, .jpg, .jpeg" onchange="preview(event)">
+    <!--  <img id="img" src="images/bird.jpg" alt="Bird image"> -->
+    </div>  
+
+    <img id="displayImg" >
+  <!--  <div id="display">
+    </div>  -->
+
+    <table id="table">
+        <tr>
+          <th>Height:</th>
+          <th>Width:</th>
+          <th>Size:</th>
+        </tr>
+
+        <tr>
+          <th id="height"></th>
+          <th id="width"></th>
+          <th id="size"></th>
+        </tr>
+      </table>
+
+      <button id="set" type="button" onclick="canvasImg()">Set Image</button>
+      <button id="download" type="button" onclick="download()">Download Image</button>
+      <button type="button" id = "clear" onclick="window.location.reload()" >Clear</button>
+      <canvas id="canvas" max-height="500px" ></canvas>
+      <img  id="downloadImg" src="" alt="">
+      
+
+   <!--
+    <div id="properties">
+        <h2>Image Size:</h2>
+        <img id="disImg">
+        <button type="button" id="btn" onclick="display()">Details</button>
+        <br>
+        <img id="output" /> -->
+       <!-- <canvas id="canvas"> 
+        </canvas>  
+        <p id="height"></p>
+        <p id="width"></p>
+    </div>
+      -->
+</body>
+</html>
